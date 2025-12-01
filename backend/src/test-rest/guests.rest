@@ -1,0 +1,26 @@
+### CREATE GUEST
+POST http://localhost:5000/api/guests
+Content-Type: application/json
+
+{
+  "full_name": "Reren",
+  "phone": "08123456789",
+  "email": "reren@example.com"
+}
+
+### GET ALL GUESTS
+GET http://localhost:5000/api/guests
+
+### GET GUEST BY ID
+GET http://localhost:5000/api/guests/001
+
+### UPDATE GUEST
+PUT http://localhost:5000/api/guests/001
+Content-Type: application/json
+
+{
+  "phone": "08987654321"
+}
+
+### DELETE GUEST
+DELETE http://localhost:5000/api/guests/001

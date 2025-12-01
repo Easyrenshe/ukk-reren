@@ -1,0 +1,26 @@
+### CREATE ROOM
+POST http://localhost:5000/api/rooms
+Content-Type: application/json
+
+{
+  "room_number": "101",
+  "type_id": "981e6885-9a36-4fe9-876b-a153a7952d0d",
+  "status": "Available"
+}
+
+### GET ALL ROOMS
+GET http://localhost:5000/api/rooms
+
+### GET ROOM BY ID
+GET http://localhost:5000/api/rooms/001
+
+### UPDATE ROOM
+PUT http://localhost:5000/api/rooms/001
+Content-Type: application/json
+
+{
+  "status": "maintenance"
+}
+
+### DELETE ROOM
+DELETE http://localhost:5000/api/rooms/001

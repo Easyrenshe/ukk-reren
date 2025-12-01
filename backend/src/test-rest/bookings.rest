@@ -1,0 +1,28 @@
+### CREATE BOOKING
+POST http://localhost:5000/api/bookings
+Content-Type: application/json
+
+{
+  "guest_id": "d10ac168-613b-4b06-886b-cb5a8de447c3",
+  "room_id": "05a833b6-43bc-4b61-ae56-58f9ac027e5d",
+  "check_in": "2025-11-25",
+  "check_out": "2025-11-30",
+  "total_price": 2250000
+}
+
+### GET ALL BOOKINGS
+GET http://localhost:5000/api/bookings
+
+### GET BOOKING BY ID
+GET http://localhost:5000/api/bookings/001
+
+### UPDATE BOOKING
+PUT http://localhost:5000/api/bookings/001
+Content-Type: application/json
+
+{
+  "status": "checked_in"
+}
+
+### DELETE BOOKING
+DELETE http://localhost:5000/api/bookings/001

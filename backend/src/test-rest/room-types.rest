@@ -1,0 +1,26 @@
+### CREATE ROOM TYPE
+POST http://localhost:5000/api/room-types
+Content-Type: application/json
+
+{
+  "name": "Suite",
+  "description": "Spacious suite with ocean view",
+  "price": 450000
+}
+
+### GET ALL ROOM TYPES
+GET http://localhost:5000/api/room-types
+
+### GET ROOM TYPE BY ID
+GET http://localhost:5000/api/room-types/001
+
+### UPDATE ROOM TYPE
+PUT http://localhost:5000/api/room-types/001
+Content-Type: application/json
+
+{
+  "price": 500000
+}
+
+### DELETE ROOM TYPE
+DELETE http://localhost:5000/api/room-types/001

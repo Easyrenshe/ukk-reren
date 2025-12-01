@@ -1,0 +1,26 @@
+### CREATE PAYMENT
+POST http://localhost:5000/api/payments
+Content-Type: application/json
+
+{
+  "booking_id": "68df1df7-3f2d-47bc-b14b-dc614192ca37",
+  "amount": 2250000,
+  "payment_method": "credit_card"
+}
+
+### GET ALL PAYMENTS
+GET http://localhost:5000/api/payments
+
+### GET PAYMENT BY ID
+GET http://localhost:5000/api/payments/001
+
+### UPDATE PAYMENT
+PUT http://localhost:5000/api/payments/001
+Content-Type: application/json
+
+{
+  "amount": 2300000
+}
+
+### DELETE PAYMENT
+DELETE http://localhost:5000/api/payments/001
