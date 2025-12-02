@@ -46,10 +46,12 @@ async function seedUsers() {
 
         // Insert user
         await pool.query(
-          `INSERT INTO users (username, email, password, full_name, role, is_active) 
-           VALUES ($1, $2, $3, $4, $5, $6)`,
-          [user.username, user.email, hashedPassword, user.full_name, user.role, true]
-        );
+  `INSERT INTO users (username, email, password, full_name, role, is_active) 
+   VALUES ($1, $2, $3, $4, $5, $6)
+   ON CONFLICT (email) DO NOTHING`,
+  [user.username, user.email, hashedPassword, user.full_name, user.role, true]
+);
+
 
         console.log(`✅ Created user: ${user.email}`);
       } else {

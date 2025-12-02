@@ -70,6 +70,9 @@ Backend API untuk sistem manajemen hotel yang dibangun dengan **Express.js**, **
 
 ---
 
+### Seed untuk Login
+npx ts-node src/database/seedUsers.ts
+
 ## 📦 Instalasi
 
 ### Prerequisites
