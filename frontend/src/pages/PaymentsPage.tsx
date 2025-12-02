@@ -247,9 +247,14 @@ export default function PaymentsPage() {
                       <Button size="sm" variant="ghost" className="flex items-center gap-1 hover:text-purple-700" onClick={() => handleEdit(payment)}>
                         <FiEdit /> Edit
                       </Button>
-                      <Button size="sm" variant="destructive" className="flex items-center gap-1" onClick={() => handleDelete(payment.id)} disabled={deletingPayment}>
-                        <FiTrash2 /> Hapus
-                      </Button>
+                      <Button
+  size="sm"
+  className="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-black"
+  onClick={() => handleDelete(payment.id)}
+  disabled={deletingPayment}
+>
+  <FiTrash2 /> Hapus
+</Button>
                     </td>
 
                   </tr>

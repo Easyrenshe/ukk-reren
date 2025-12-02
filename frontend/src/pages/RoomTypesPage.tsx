@@ -69,8 +69,8 @@ export default function RoomTypesPage() {
   }
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="space-y-8 p-6 w-full max-w-6xl">
+    <div className="space-y-8 p-6">
+    
 
         {/* Header */}
         <div className="flex justify-between items-center">
@@ -236,6 +236,6 @@ export default function RoomTypesPage() {
           </div>
         )}
       </div>
-    </div>
+   
   )
 }
